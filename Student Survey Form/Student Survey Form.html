@@ -1,0 +1,86 @@
+<!DOCTYPE html><html>
+    <head><title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Future Aspiration Survey Form</h1>
+                <p id="description" class="text-center description">"Discover your Path, Unleash your Potential, Shape your Future"</p>
+            </header>
+            <form action="" id="survey-form">
+
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+              </div>  
+
+              <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your E-Mail" required>
+              </div>
+
+              <div class="form-group">
+                <label id="age-label" for="age">Age</label>
+                <input type="number" min="9" max="25" id="age" name="age" class="form-control" placeholder="Age" required>
+              </div>
+
+              <div class="form-group radio-div" >
+                
+                <p>Gender</p>&nbsp;&nbsp;
+                <label>
+                <input type="radio" name="Gender" value="male" class="radio-input" checked="">Male</label>
+              
+              <label>
+                <input type="radio" name="Gender" value="female" class="radio-input">Female</label>
+              
+              <label>
+                <input type="radio" name="Gender" value="other" class="radio-input">Other</label>
+              </div>
+
+              <div class="form-group">
+                <p>Level of Education</p>
+                <select name="dropdown" id="education" class="form-control">
+                <option value="" selected="" disabled="">What you study</option>
+                <option value="ssc">SSC</option>
+                <option value="hsc">HSC</option>
+                <option value="ug">UG</option>
+                <option value="pg">PG</option>
+                <option value="Diploma">Diploma</option>
+              </select>
+              </div>
+
+              <div class="form-group">
+                <p>Career</p>
+                <select name="dropdown" id="career" class="form-control">
+                  <option value="" disabled="" selected="">What you want to be</option>
+                  <option value="ba">BA</option>
+                  <option value="bfa">BFA</option>
+                  <option value="BDS">BDS</option>
+                  <option value="bsc">BSC</option>
+                  <option value="engineer">Engineer</option>
+                  <option value="biotechlonology">Biotechnology</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p>Skills</p>
+                <label for=""><input type="checkbox" value="driving" name="skills" class="input-checkbox">Driving</label>
+                <label for=""><input type="checkbox" value="swiming" name="skills" class="input-checkbox">Swiming</label>
+                <label for=""><input type="checkbox" value="typing" name="skills" class="input-checkbox">Typing</label>
+                <label for=""><input type="checkbox" value="swiming" name="skills" class="input-checkbox">Swiming</label>
+              </div>
+
+              <div class="form-group">
+                <p>Message</p>
+                <textarea name="comments" class="textarea-input"  id="comments" placeholder="Enter your message here..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+              </div>
+            </form>
+        </div>
+    </body>
+</html>
